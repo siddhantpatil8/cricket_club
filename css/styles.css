@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+:root {
+  --primary: #941B0C;
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Rakkas', cursive;
+  --ff-rokkit: 'Rokkitt', serif;
+}
+
+body, p, h1, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 1em 1.40em;
+}
+
+.para {
+  font-size: 1.05rem;
+  font-family: var(--ff-primary);
+  text-align: justify;
+}
+
+.input {
+  max-width: 250px;
+  height: 40px;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  margin: 10px 0;
+  text-align: center;
+  -webkit-box-shadow: inset 4px 6px 10px 2px rgba(0, 0, 0, 0.16);
+          box-shadow: inset 4px 6px 10px 2px rgba(0, 0, 0, 0.16);
+}
+
+.submit {
+  height: 40px;
+  background-color: var(--primary);
+  color: black;
+  font-size: 1.25rem;
+  font-family: var(--primary);
+  font-weight: 900;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 254px;
+  -webkit-box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.button {
+  height: 50px;
+  width: 180px;
+  max-width: 250px;
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  font-size: 1.05rem;
+  font-family: var(--primary);
+  -webkit-box-shadow: 1px 3px 13px 4px rgba(0, 0, 0, 0.16);
+          box-shadow: 1px 3px 13px 4px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.heading {
+  color: var(--primary);
+  text-align: center;
+  font-size: 1.80rem;
+}
+
+.nav {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.45);
+          box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.45);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  border-bottom: 1px solid var(--primary);
+}
+
+.title--name {
+  margin: 0 auto;
+}
+
+.title--name a {
+  color: var(--primary);
+  font-family: var(--ff-secondary);
+  font-size: 2rem;
+}
+
+.title--logos {
+  margin-left: auto;
+  position: absolute;
+  top: 17px;
+  right: 5px;
+}
+
+.sub {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.sub--top {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0.025em 0.25em;
+}
+
+.sub--top a {
+  color: black;
+  font-family: var(--ff-rokkit);
+  font-size: 1.10rem;
+}
+
+.home {
+  padding: 1.5em 0em;
+  background-image: url(/img/alessandro-bogliari-oDs_AxeR5g4-unsplash.jpg);
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+}
+
+.home--content__head {
+  font-family: var(--ff-secondary);
+  font-size: 1.75rem;
+}
+
+.home--content__info {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home--content__para {
+  font-size: 1.20rem;
+  font-family: var(--ff-primary);
+}
+
+.about--text {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.about--text__heading {
+  padding: 3px 0;
+  border-bottom: 2px solid var(--primary);
+}
+
+.about--text__para {
+  padding: 0.25em 0;
+}
+
+.about--text__button {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.about--img {
+  background-image: url(/img/net.jpg);
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+}
+
+.three {
+  background-color: #ebebeb;
+  padding-bottom: 2em;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 250px;
+  margin: 10px auto;
+  padding: .5em .7em;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 6px 10px 2px rgba(0, 0, 0, 0.16);
+          box-shadow: 4px 6px 10px 2px rgba(0, 0, 0, 0.16);
+}
+
+.card--img {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.card--heading {
+  text-align: center;
+  font-size: 1.70rem;
+  margin: 10px 0;
+  font-family: var(--ff-secondary);
+  border-bottom: 1px solid var(--primary);
+}
+
+.whyus--card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.whyus--heading {
+  margin: 20px auto;
+  border-bottom: 2px solid var(--primary);
+  width: 140px;
+}
+
+.four {
+  padding: 2em 0;
+}
+
+.testi--heading {
+  margin: 20px auto;
+  border-bottom: 2px solid var(--primary);
+  width: 200px;
+}
+
+.testi--quote {
+  font-family: var(--ff-primary);
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 8px 0;
+}
+
+.testi--legend {
+  text-align: center;
+  font-family: var(--ff-rokkit);
+  color: var(--primary);
+  font-size: 1.45rem;
+}
+
+.testi--star {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.testi--button {
+  text-align: center;
+}
+
+.fa-star {
+  color: var(--primary);
+}
+
+.five {
+  background-image: url(/img/alessandro-bogliari-oDs_AxeR5g4-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: multiply;
+}
+
+.contact--info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 1200px) {
+  .title--name a {
+    font-size: 2.2rem;
+  }
+  .title--logos {
+    margin-left: auto;
+    position: absolute;
+    top: 17px;
+    right: 15px;
+  }
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .about--text {
+    margin: 0 20px;
+  }
+  .about--text__heading {
+    text-align: left;
+    padding-left: 0px;
+  }
+  .about--text__button {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
